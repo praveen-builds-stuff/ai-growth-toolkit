@@ -35,6 +35,8 @@ follows the same process every time.
 
 **canary-landing-page-monitor** — Daily synthetic monitoring for paid landing pages: broken links, dead CTAs, embedded forms that are configured but not actually rendering. Built with Playwright and GitHub Actions, emails a report via Resend.
 
+**ads-intelligence-hub** — A three-module app: a rule engine that flags underperforming keywords by region and hands them to Claude for a specific action per row, a GEO-aware ad copy rewriter with a hard character-limit safety net, and a Quality-Score-focused landing page title generator. The most "real app" of everything here — background data fetching with caching, graceful degradation, post-processing that catches the model's mistakes.
+
 ## Using the skills
 
 Each skill folder has a `SKILL.md` (the instructions) and, where needed, a `references/` folder
