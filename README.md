@@ -29,6 +29,8 @@ follows the same process every time.
 
 **voc-messaging-starter** — Turns a month of prospect sales calls into customer-language messaging: pains, buying triggers, pillars, hook headlines. The one rule everything hangs on: quotes are lifted from real transcripts, never authored by the model — enforced by a validation script, not left to good intentions. Read the companion `PLAYBOOK.md` for the full reasoning; it's the most engineering-heavy piece in here.
 
+**icp-grounded-content** — Writes net-new B2B content that a specific ICP actually recognises, by refusing to draft until a company-context file exists: verbatim customer language, defensible opinions with the evidence behind each, and one honest product weakness. The other writing skills here fix a draft after it's written. This one blocks the draft from starting on nothing, because "be more opinionated" handed to a model produces an invented opinion, and a technical audience spots that instantly. Pairs directly with `voc-messaging-starter`, whose transcript output populates the verbatim section.
+
 ## Tools
 
 **ads-relevance-audit** — Cross-checks keyword intent, ad copy, and landing page content in a Google Ads account to flag Quality Score problems, and recommends reroute-before-pause fixes ranked by severity.
@@ -45,7 +47,8 @@ Claude Skills format, and it activates automatically when you ask for the kind o
 
 Some reference files use fictional example data — the brand design system in
 `ab-test-design-reviewer`, the writer examples in `praveen-linkedin-voice`, the config
-placeholders in `voc-messaging-starter`. Swap in your own team's real details before using
+placeholders in `voc-messaging-starter`, the entire Wombat Labs example context file in
+`icp-grounded-content`. Swap in your own team's real details before using
 those for production work.
 
 ## Using the tools
